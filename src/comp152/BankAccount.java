@@ -1,7 +1,16 @@
 package comp152;
 
 public class BankAccount {
-    public static void main(String[] args){
+    private double balance;
+    private float interestRate;
 
+    public void deposit(double amount) {
+        balance += amount;
     }
+    public boolean withdraw(double amount) {
+        
+        balance -= amount;
+    }
+
 }
+
